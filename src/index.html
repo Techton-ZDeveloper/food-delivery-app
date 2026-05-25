@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>uickBite - Home page</title>
+</head>
+<body>
+  <header class="p-4 sticky top-0 bg-white">
+    <div class=" max-w-7xl m-auto p-4 flex justify-between items-center ">
+      <div><img src="images/QuickBite.png" alt=""></div>
+
+      <div class="md:block space-x-8 text-[20px] font-medium hidden text-gray-600">
+          <a class="text-gray-900 hover:text-[#ff7800]  font-semibold" href="#">Home</a>
+          <a class="text-gray-900 hover:text-[#ff7800]  font-semibold" href="">Restaurants</a>
+          <a class="text-gray-900 hover:text-[#ff7800]  font-semibold" href="">Track Order</a>
+      </div>
+
+      <div class="flex gap-4">
+        <button class="hidden md:block px-8 py-3 bg-white text-[#ff7800] rounded-full font-medium border border-amber-300 cursor-pointer hover:bg-amber-50">Login</button>
+        <button class="hidden md:block px-8 py-3 bg-[#ff7800] text-white rounded-full font-medium cursor-pointer hover:bg-[#ff9f32]">Sign Up</button>
+      </div>
+
+      <div id="menu-btn" class="md:hidden w-2 h-2 space-y-1">
+          <div class="w-8 h-1 bg-gray-900"></div>
+          <div class="w-6 h-1 bg-gray-900"></div>
+          <div class="w-4 h-1 bg-gray-900"></div>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="sticky top-0 md:hidden hidden space-y-12 text-[18px] font-semibold mt-4">
+      <div class="flex flex-col">
+        <a class="hover:text-[#ff7800] hover:bg-amber-100 px-6 py-2" href="#">Home</a>
+        <a class="hover:text-[#ff7800] hover:bg-amber-100 px-6 py-2" href="">Restaurants</a>
+        <a class="hover:text-[#ff7800] hover:bg-amber-100 px-6 py-2" href="">Track Orders</a>
+      </div>
+
+      <div class="flex flex-col space-y-4 mx-6">
+        <button class=" text-[#ff7800] border border-[#ff7800] rounded-2xl bg-white py-3 font-medium text-[14px]">Login</button>
+        <button class=" text-white border border-[#ff7800] rounded-2xl bg-[#ff7800] hover:bg-[#ff9f32] py-3 font-medium text-[14px]">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section>
+    <div class="w-auto h-auto md:w-full h-[500px] bg-[url(./images/homeScreen-ban.jpeg)] bg-cover bg-center bg-no-repeat">
+        <div class="px-5 w-auto md:w-1/2 pl-15 pt-12">
+            <p class="text-[14px] md:bg-[#3b2613] w-45 py-1.5 px-10 text-center rounded-full text-[#e2700c] border-[1px] border-[#703d11] text-[12px]">Fastest Delivery</p>
+            <h1 class="text-[30px] text-white md:text-white pt-8 text-5xl font-semibold leading-[1.1]">Fast Delivery Of <span class="text-[#ff7800]"><br>Your Favourite Meals</span></h1>
+            <p class="text-gray-100 text-[14px] py-7">Order delicious meals from your favourite restaurants <br>and get them delivered fast to your doorstep.</p>
+
+            <div class="bg-white rounded-[5px] flex flex-row justify-between">
+                <div class="flex flex-row w-80 p-2">
+                  <img class="p-2 w-10 h-10" src="images/search.png" alt="">
+                  <input class="text-[13px] w-76 p-2" type="search" name="" id="" placeholder="Search for restaurants or meals">
+                </div>
+
+                <div class="flex flex-row justify-center items-center p-2">
+                  <img class="w-5 h-5" src="images/location.png" alt="">
+                  <select class="mr-3" name="" id="">
+                    <option value="">Abia, Nigeria</option>
+                    <option value="">Lagos, Nigeria</option>
+                    <option value="">Edo, Nigeria</option>
+                    <option value="">Kaduna, Nigeria</option>
+                    <option value="">Rivers, Nigeria</option>
+                  </select>
+                  <a class="bg-[#ff7800] px-5 py-2 rounded-[6px] text-white hover:bg-[#ff9c2c]" href="">Sign Up</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row w-5/6 justify-between items-center py-8">
+              <div class="flex flex-row">
+                <div class="flex justify-center items-center"><img class="w-7" src="images/bike.png" alt=""></div>
+                <div class="pl-5">
+                  <p class="text-white text-[18px] md:text-white text-[13px]">Free Delivery</p>
+                  <p class="text-white text-[14px] md:text-gray-300 text-[11px]">On orders over N10,000</p>
+                </div>
+              </div>
+
+              <div class="flex flex-row py-10">
+                <div class="flex justify-center items-center"><img class="w-7" src="images/clock.png" alt=""></div>
+                <div class="text-white pl-5">
+                  <p class="text-[18px] md:text-[13px]">30Mins Delivery</p>
+                  <p class="text-[14px] md:text-gray-300 text-[11px]">Fast and reliable</p>
+                </div>
+              </div>
+
+              <div class="flex flex-row">
+                <div class="flex justify-center items-center"><img class="w-7" src="images/user.png" alt=""></div>
+                <div class="pl-5">
+                  <p class="text-white text-[18px] md:text-white text-[13px]">Live Tracking</p>
+                  <p class="text-white text-[14px] md:text-gray-300 text-[11px]">Track your order live</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- MAIN BODY OF THE APPLICATION -->
+  <div class="bg-white">
+    <div class="pl-5 md:px-15"> <!--This is the container that houses all content-->
+      <!-- SECTION ONE -->
+      <section>
+        <div class="flex flex-col justify-between items-center md:flex-row">
+          <div>
+            <p class="text-[20px] font-semibold py-8">Shop by Categories</p>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <a href=""><p class="pr-3 text-[#ff7800] font-semibold text-[16px]">View all Categories</p></a>
+            <img class="w-4 h-3" src="images/arrow.png" alt="">
+          </div>
+        </div>
+
+        <div class="flex flex-col pb-10 md:flex-row justify-between items-center">
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img src="images/Chicken.png" alt="">
+            <p>Chicken</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-34 rounded-t-[10px]" src="images/Jollof.jpg" alt="">
+            <p>Jollof Rice</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img src="images/Pasta.png" alt="">
+            <p>Pasta</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-34 rounded-t-[10px]" src="images/Local-Food.jpg" alt="">
+            <p>Local Food</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img src="images/Shawarma.png" alt="">
+            <p>Shawarma</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-24 rounded-t-[10px]" src="images/Pizzar.jpg" alt="">
+            <p>Domino Pizza</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-34 rounded-t-[10px]" src="images/Fried-rice-source.jpg" alt="">
+            <p>Fried Rice</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-34 rounded-t-[10px]" src="images/Fried-Fish-Salad.jpg" alt="">
+            <p>Fried Fish</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-24 rounded-t-[10px]" src="images/Cheese-cake.png" alt="">
+            <p>Cheese Cake</p>
+          </div>
+
+          <div class="text-center border-[1.5px] border-gray-100 rounded-[10px]">
+            <img class="w-34 rounded-t-[10px]" src="images/chops.jpg" alt="">
+            <p>Small Chops</p>
+          </div>
+        </div>
+
+        <div class="space-x-3">
+            <select class="border-[1px] border-gray-400 py-1.5 px-3 rounded-full" name="" id="">
+              <option value="">Food Types</option>
+              <option value="">Fried Rice</option>
+              <option value="">Jollof Rice</option>
+              <option value="">Chicken</option>
+              <option value="">Fried Fish</option>
+              <option value="">Local Food</option>
+              <option value="">Cheese Cake</option>
+              <option value="">Shawarma</option>
+            </select>
+
+            <select class="border-[1px] border-gray-400 py-1.5 px-3 rounded-full" name="" id="">
+              <option value="">Sort by</option>
+            </select>
+
+            <select class="border-[1px] border-gray-400 py-1.5 px-3 rounded-full bg-green-300" name="" id="">
+              <option value="">Top Rated</option>
+            </select>
+
+            <select class="border-[1px] border-gray-400 py-1.5 px-3 rounded-full" name="" id="">
+              <option value="">Local</option>
+            </select>
+          </div>
+      </section>
+
+      <!-- SECTION TWO -->
+       <section>
+        <div class="flex flex-col md:flex-row justify-between pt-5">
+          <div>
+            <p class="text-[20px] font-semibold py-8">Popular Restaurants</p>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <a href=""><p class="pr-3 text-[#ff7800] font-semibold text-[16px]">View all Restaurants</p></a>
+            <img class="w-4 h-3" src="images/arrow.png" alt="">
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between">
+          <!-- FIRST IMAGE AND CONTENT -->
+          <div>
+            <img class="w-80 rounded-[15px]" src="images/Chicken-Republic1.PNG" alt="">
+            <p class="font-semibold text-[19px] pt-2.5">Chicken Republic</p>
+            <div class="flex flex-row space-x-2.5 py-2 text-[14px]">
+              <div class="flex flex-row items-center space-x-1">
+                <img src="images/Star.png" alt="">
+                <p class="font-semibold">4.8 <span class="text-gray-500">(500+)</span></p>
+              </div>
+              
+              <div class="flex flex-row items-center space-x-1">
+                <img class="w-5 h-5" src="images/clock.png" alt="">
+                <p class="text-gray-500">25 - 35 mins</p>
+              </div>
+            </div>
+            
+            <p class="text-green-600 font-semibold text-[14px] pb-4">Free delivery over N10,000</p>
+
+          </div>
+
+          <!-- SECOND IMAGE AND CONTENT -->
+          <div>
+            <img class="w-80 rounded-[15px]" src="images/domino-pizza.PNG" alt="">
+            <p class="font-semibold text-[19px] pt-2.5">Dominor's Pizza</p>
+            <div class="flex flex-row space-x-2.5 py-2 text-[14px]">
+              <div class="flex flex-row items-center space-x-1">
+                <img src="images/Star.png" alt="">
+                <p class="font-semibold">4.6 <span class="text-gray-500">(700+)</span></p>
+              </div>
+              
+              <div class="flex flex-row items-center space-x-1">
+                <img class="w-5 h-5" src="images/clock.png" alt="">
+                <p class="text-gray-500">30 - 40 mins</p>
+              </div>
+            </div>
+            
+            <p class="text-green-600 font-semibold text-[14px] pb-4">Free delivery over N8,000</p>
+
+          </div>
+
+          <!-- THIRD IMAGE AND CONTENT -->
+          <div>
+            <img class="w-80 rounded-[15px]" src="images/burger-king.PNG" alt="">
+            <p class="font-semibold text-[19px] pt-2.5">Burger King</p>
+            <div class="flex flex-row space-x-2.5 py-2 text-[14px]">
+              <div class="flex flex-row items-center space-x-1">
+                <img src="images/Star.png" alt="">
+                <p class="font-semibold">4.7 <span class="text-gray-500">(600+)</span></p>
+              </div>
+              
+              <div class="flex flex-row items-center space-x-1">
+                <img class="w-5 h-5" src="images/clock.png" alt="">
+                <p class="text-gray-500">20 - 30 mins</p>
+              </div>
+            </div>
+            
+            <p class="text-green-600 font-semibold text-[14px] pb-4">Free delivery over N10,000</p>
+
+          </div>
+
+          <!-- FOURTH IMAGE AND CONTENT -->
+          <div>
+            <img class="w-80 rounded-[15px]" src="images/KFC.PNG" alt="">
+            <p class="font-semibold text-[19px] pt-2.5">KFC</p>
+            <div class="flex flex-row space-x-2.5 py-2 text-[14px]">
+              <div class="flex flex-row items-center space-x-1">
+                <img src="images/Star.png" alt="">
+                <p class="font-semibold">4.8 <span class="text-gray-500">(400+)</span></p>
+              </div>
+              
+              <div class="flex flex-row items-center space-x-1">
+                <img class="w-5 h-5" src="images/clock.png" alt="">
+                <p class="text-gray-500">25 - 35 mins</p>
+              </div>
+            </div>
+            
+            <p class="text-green-600 font-semibold text-[14px] pb-4">Free delivery over N9,000</p>
+
+          </div>
+        </div>
+       </section>
+
+
+      <!-- SECTION THREE HERE -->
+      <div class="flex flex-col md:flex-row space-x-3 py-15">
+        <div>
+          <img class="w-165 rounded-[20px]" src="images/promo-ban.jpeg" alt="">
+        </div>
+
+        <div>
+          <p class="text-[17px] font-semibold">What Our Customers Say</p>
+          <div class="flex flex-col space-x-5 md:flex-row pt-3">
+            <div class="flex flex-row py-8 rounded-[10px] p-2 space-x-2.5 shadow-lg">
+              <img class="w-10 h-10" src="images/Customer-01.png" alt="">
+              <div class="w-48 h-auto text-[11px]">
+                <img class="w-20" src="images/multiple-stars.PNG" alt="">
+                <p class="py-2">"QuickBite is my go to app! Fast delivery and the food is delicious"</p>
+                <p class="font-bold">Bobby A.</p>
+                <div class="flex flex-row space-x-1 py-2">
+                  <img src="images/Verification.png" alt="">
+                  <p>Verified Customer</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex flex-row py-8 rounded-[10px] p-2 space-x-2.5 shadow-lg">
+              <img class="w-10 h-10" src="images/Customer-01.png" alt="">
+              <div class="w-48 h-auto text-[11px]">
+                <img class="w-20" src="images/multiple-stars.PNG" alt="">
+                <p class="py-2">"QuickBite is my go to app! Fast delivery and the food is delicious"</p>
+                <p class="font-bold">Bobby A.</p>
+                <div class="flex flex-row space-x-1 py-2">
+                  <img src="images/Verification.png" alt="">
+                  <p>Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-row py-8 rounded-[10px] p-2 space-x-2.5 shadow-lg">
+              <img class="w-10 h-10" src="images/Customer-01.png" alt="">
+              <div class="w-48 h-auto text-[11px]">
+                <img class="w-20" src="images/multiple-stars.PNG" alt="">
+                <p class="py-2">"QuickBite is my go to app! Fast delivery and the food is delicious"</p>
+                <p class="font-bold">Bobby A.</p>
+                <div class="flex flex-row space-x-1 py-2">
+                  <img src="images/Verification.png" alt="">
+                  <p>Verified Customer</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <!-- SECTION FOUR -->
+      <section class="pb-20">
+        <h3 class="text-[18px] font-bold py-8">How it works</h3>
+        <div class="flex flex-col justify-between md:flex-row">
+          <div class="w-113 border-[1px] border-gray-100 rounded-[10px] p-8">
+            <img class="p-3" src="images/object-01.png" alt="">
+            <p class="font-semibold">1. Browse</p>
+            <p class="py-2">Find restaurants and dishes you love</p>
+          </div>
+
+          <div class="w-113 border-[1px] border-gray-100 rounded-[10px] p-8 py-6">
+            <img class="p-3" src="images/object-02.png" alt="">
+            <p class="font-semibold">2. Order</p>
+            <p class="py-2">Add items to your cart and checkout</p>
+          </div>
+
+          <div class="w-113 border-[1px] border-gray-100 rounded-[10px] p-8">
+            <img class="p-3" src="images/object-03.png" alt="">
+            <p class="font-semibold">3. Enjoy</p>
+            <p class="py-2">Track your order and eat fresh</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Don't go below this div tag -->
+    </div>
+    <!-- FOOTER SECTION HERE -->
+    <footer class="bg-gray-50 py-15 border-y-2 border-gray-200">
+        <div class="px-5 flex flex-col justify-between space-y-7 md:flex-row px-15">
+          <div>
+            <img class="w-24" src="images/QuickBite.png" alt="">
+            <p class="py-8 w-65 text-[15px] text-gray-500">Hot meals from your favourite local spots, delivered fast. </p>
+            <div class="bg-[#ff7800] w-80 p-1 rounded-[8px] text-white"><a href=""><b>Download the QuickBite app</b><br>Get the best experience on our mobile app</a></div>
+          </div>
+
+          <div class="">
+            <p class="font-semibold">Company</p>
+            <p><a href="">About</a></p>
+            <p><a href="">Careers</a></p>
+            <p><a href="">Press</a></p>
+          </div>
+
+          <div>
+            <p class="font-semibold">Help</p>
+            <p><a href="">Support</a></p>
+            <p><a href="">FAQ</a></p>
+            <p><a href="">Constant</a></p>
+          </div>
+
+          <div>
+            <p class="font-semibold">Address</p>
+            <p>1 Market Street, San Francisco</p>
+          </div>
+        </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () =>
+    {mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
